@@ -1,0 +1,43 @@
+<ion-view title="Cadastro" id="page6">
+  <ion-content padding="true" class="has-header">
+    <form id="cadastro-form3" class="list center-form">
+      <h3 id="cadastro-heading1" style="color:#000000;text-align:center;">Minha Conta</h3>
+      <label class="item item-input" id="cadastro-input9">
+        <span class="input-label">telefone</span>
+        <input type="tel" placeholder="" ng-model="dados.telefone">
+      </label>
+      <label class="item item-input" id="cadastro-input10">
+        <span class="input-label">celular</span>
+        <input type="tel" placeholder="" ng-model="dados.celular">
+      </label>
+      <label class="item item-input" id="cadastro-input15">
+        <span class="input-label">data de nascimento</span>
+        <input type="date" placeholder="">
+      </label>
+      <label class="item item-input" id="cadastro-input12">
+        <span class="input-label">nicho de atuação</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="cadastro-input13">
+        <span class="input-label">empresa</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="cadastro-input7">
+        <span class="input-label">CEP</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="cadastro-input22">
+        <span class="input-label">endereço</span>
+        <input type="text" placeholder="">
+      </label>
+      <div id="cadastro-container1" class="row">
+        <div id="cadastro-container4" class="col, col-50">
+          <a ui-sref="login" id="cadastro-button6" class="button button-stable  button-block button-outline">Cancelar</a>
+        </div>
+        <div id="cadastro-container3" class="col, col-50">
+          <a ui-sref="menu.painelDeControle" id="cadastro-button7" ng-click="enviar()" class="button button-positive  button-block">Salvar</a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

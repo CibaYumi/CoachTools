@@ -1,0 +1,83 @@
+<ion-view title="Cadastro de Coachee" id="page7">
+  <ion-content padding="true" class="has-header">
+    <h3 id="cadastroDeCoachee-heading3" style="color:#000000;text-align:center;">Dados Pessoais</h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+    </div>
+    <form id="cadastroDeCoachee-form4" class="list">
+      <div class="spacer" style="width: 300px; height: 20px;"></div>
+      <label class="item item-input" id="cadastroDeCoachee-input23">
+        <span class="input-label">nome completo</span>
+        <input type="text" placeholder="" ng-model="dados.nome">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input24">
+        <span class="input-label">email</span>
+        <input type="email" placeholder="" ng-model="dados.email">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input25">
+        <span class="input-label">telefone</span>
+        <input type="tel" placeholder="" ng-model="dados.tel">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input26">
+        <span class="input-label">celular</span>
+        <input type="tel" placeholder="" ng-model="dados.cel">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input27">
+        <span class="input-label">data de nascimento</span>
+        <input type="date" placeholder="" ng-model="dados.datanasc">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input28">
+        <span class="input-label">profissão</span>
+        <input type="text" placeholder="" ng-model="dados.prof">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input29">
+        <span class="input-label">empresa</span>
+        <input type="text" placeholder="" ng-model="dados.empresa">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input30">
+        <span class="input-label">estado civil</span>
+        <input type="text" placeholder="" ng-model="ecivil">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input31">
+        <span class="input-label">CEP</span>
+        <input type="text" placeholder="" ng-model="dados.cep">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input32">
+        <span class="input-label">endereço</span>
+        <input type="text" placeholder="">
+      </label>
+      <h3 id="cadastroDeCoachee-heading7" style="color:#000000;text-align:center;">Dados do Processo</h3>
+      <label class="item item-input" id="cadastroDeCoachee-input63">
+        <span class="input-label">data de início</span>
+        <input type="date" placeholder="" ng-model="dados.datainicio">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input64">
+        <span class="input-label">número de sessões</span>
+        <input type="text" placeholder="" ng-model="dados.numdesessoes">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input14">
+        <span class="input-label">periodicidade</span>
+        <input type="text" placeholder="" ng-model="dados.periodicidade">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input65">
+        <span class="input-label">dia da semana</span>
+        <input type="text" placeholder="" ng-model="dados.diasemana">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-input66">
+        <span class="input-label">valor do pacote</span>
+        <input type="text" placeholder="" ng-model="dados.valorpacote">
+      </label>
+      <label class="item item-input" id="cadastroDeCoachee-textarea1">
+        <span class="input-label"></span><textarea placeholder="Observações" ng-model="dados.observacoes"></textarea></label>
+      <div id="cadastroDeCoachee-container7" class="row">
+        <div id="cadastroDeCoachee-container5" class="col, col-50">
+          <a ui-sref="menu.painelDeControle" id="cadastroDeCoachee-button10" class="button button-stable  button-block button-outline">Cancelar</a>
+        </div>
+        <div id="cadastroDeCoachee-container6" class="col, col-50">
+          <button id="cadastroDeCoachee-button11" class="button button-positive  button-block">Cadastrar</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
