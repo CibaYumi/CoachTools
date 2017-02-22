@@ -1,7 +1,25 @@
 <ion-view title="Painel de Controle" id="page1">
   <ion-content padding="true" class="has-header">
-    <h2 id="painelDeControle-heading9" style="color:#000000;text-align:center;">{{i.sex}},
-      <br> {{i.name}}</h2>
-    <a ui-sref="menu.teste" id="painelDeControle-button12" class="button button-positive  button-block">Tap me!</a>
+    <h2 id="painelDeControle-heading9" style="color:#000000;text-align:center;">
+      {{i.sex}},<br>
+      {{i.name}}
+    </h2>
+
+
+    <button type="button" name="button">
+      <img src="../img/icons/5_linguagens.png" alt="">
+    </button>
+
+    <a id="painelDeControle-button12" class="button button-positive  button-block" ng-click="goToLoveTest()">
+      As 5 Linguagens do Amor
+    </a>
+
+    <a id="painelDeControle-button12" class="button button-positive  button-block" ng-click="goToRepresTest()">
+      Sistema Representacional
+    </a>
+
+    <a id="painelDeControle-button12" class="button button-positive  button-block" ng-click="goToTimeTest()">
+      Tríade do Tempo
+    </a>
   </ion-content>
 </ion-view>
