@@ -115,17 +115,58 @@ function ($scope, $stateParams) {
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $http) {
+  $scope.goToCloud = function(grupo1a, grupo1b, grupo1c, grupo1d, grupo1e, grupo2a, grupo2b, grupo2c, grupo2d, grupo2e, grupo3a, grupo3b, grupo3c, grupo3d, grupo3e, grupo4a, grupo4b, grupo4c, grupo4d, grupo4e, grupo5a, grupo5b, grupo5c, grupo5d, grupo5e) {
+  var obj = {
+    titulo : "nome do form",
+    grupoA : {
+      A : grupo1a,
+      B : grupo1b,
+      C : grupo1c,
+      D : grupo1d,
+      E : grupo1e
+    },
+    grupoB : {
+      A : grupo2a,
+      B : grupo2b,
+      C : grupo2c,
+      D : grupo2d,
+      E : grupo2e
+    },
+    grupoC : {
+      A : grupo3a,
+      B : grupo3b,
+      C : grupo3c,
+      D : grupo3d,
+      E : grupo3e
+    },
+    grupoD : {
+      A : grupo4a,
+      B : grupo4b,
+      C : grupo4c,
+      D : grupo4d,
+      E : grupo4e
+    },
+    grupoE : {
+      A : grupo5a,
+      B : grupo5b,
+      C : grupo5c,
+      D : grupo5d,
+      E : grupo5e
+    }
+  };
+
   $http({
-    method: 'GET',
-    url: 'http://localhost:3000/devices'
-  }).then(function successCallback(response) {
-    $scope.itens = response.data;
-      // this callback will be called asynchronously
-      // when the response is available
-    }, function errorCallback(response) {
-      // called asynchronously if an error occurs
-      // or server returns response with an error status.
-    });
+      method: 'POST',
+      url: 'http://localhost:3000/loveTest',
+      data:obj
+    }).then(function successCallback(response) {
+      $scope.flagenergy = response.data;
+      document.getElementById("flagColor").style.background = response.data.flag;
+      }, function errorCallback(response) {
+      });
+
+    };
+
 
 }])
 

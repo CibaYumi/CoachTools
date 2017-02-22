@@ -67,7 +67,7 @@
       <div class="col col-40">
         <form class="list">
           <ion-radio ng-model="grupo1d" ng-value="1">1</ion-radio>
-          <ion-radio ng-model="grupo1d" ng-vallue="value">2</ion-radio>
+          <ion-radio ng-model="grupo1d" ng-value="2">2</ion-radio>
           <ion-radio ng-model="grupo1d" ng-value="3">3</ion-radio>
           <ion-radio ng-model="grupo1d" ng-value="4">4</ion-radio>
           <ion-radio ng-model="grupo1d" ng-value="5">5</ion-radio>
@@ -414,7 +414,7 @@
       </div>
       <div class="col col-40">
         <form class="list">
-          <ion-radio ng-model="grupo5d" ng-value="5">1</ion-radio>
+          <ion-radio ng-model="grupo5d" ng-value="1">1</ion-radio>
           <ion-radio ng-model="grupo5d" ng-value="2">2</ion-radio>
           <ion-radio ng-model="grupo5d" ng-value="3">3</ion-radio>
           <ion-radio ng-model="grupo5d" ng-value="4">4</ion-radio>
@@ -439,6 +439,6 @@
         </form>
       </div>
     </div>
-    <button class="button button-positive  button-block">Enviar!</button>
+    <button class="button button-positive  button-block" ng-click="goToCloud(grupo1a, grupo1b, grupo1c, grupo1d, grupo1e, grupo2a, grupo2b, grupo2c, grupo2d, grupo2e, grupo3a, grupo3b, grupo3c, grupo3d, grupo3e, grupo4a, grupo4b, grupo4c, grupo4d, grupo4e, grupo5a, grupo5b, grupo5c, grupo5d, grupo5e)">Enviar!</button>
   </ion-content>
 </ion-view>
