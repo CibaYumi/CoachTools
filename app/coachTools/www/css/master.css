@@ -1,3 +1,20 @@
+.body-pages{
+  background-color: #070F30;
+  ;
+}
+
+.item.item-body {
+  background-color: #52677F;
+}
+
+/*.label.item.item-radio.ng-empty.ng-valid{
+  background-color: #52677F;
+}
+
+.ng-valid{
+  background-color: green;
+}*/
+
 .icons-home{
   width: auto;
   text-align: center;

@@ -157,7 +157,7 @@ function ($scope, $stateParams, $http) {
 
   $http({
       method: 'POST',
-      url: 'http://localhost:3000/loveTest',
+      url: 'http://172.16.16.171:3000/loveTest',
       data:obj
     }).then(function successCallback(response) {
       $scope.flagenergy = response.data;
