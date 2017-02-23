@@ -19,309 +19,378 @@
     <h2 style="color:#68ACAC;font-weight:600;text-align:center;">Vamos começar?</h2>
     <div style="text-align:center;" class="show-list-numbers-and-dots">
       <p style="color:#000000;">Nos grupos de perguntas abaixo
-        <strong>avalie cada frase com 1 a 5</strong> de acordo com o que poderia fazer você se sentir mais apreciado e amado pelo seu colega.</p>
+        <strong>avalie cada frase com 1 a 4</strong> de acordo com o que mais descreve você, sem repetir o n´úmero.</p>
     </div>
     <div class="spacer" style="width: 300px; height: 40px;"></div>
     <div style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#000000;">O número 5 representa o que você mais apreciaria em cada grupo e o número 1 o que você menos apreciaria [
+      <p style="color:#000000;">O número 4 representa o que mais te representa em cada grupo e o número 1 o que você menos apreciaria [
         <strong>nenhum grupo individual pode ter o mesmo número repetidas vezes</strong>]"</p>
     </div>
-    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">Grupo de perguntas 1</h3>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#000000;font-weight:600;text-align:center;">Eu tomo decisões importantes baseado em:</h3>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">intuição</p>
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">1. Eu tomo decisões importantes baseado em:</h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... o que me soa melhor.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo1a" ng-value="1">1</option>
+          <option ng-model="grupo1a" ng-value="2">2</option>
+          <option ng-model="grupo1a" ng-value="3">3</option>
+          <option ng-model="grupo1a" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">o que me soa melhor</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... um estudo preciso e minucioso do assunto.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo1b" ng-value="1">1</option>
+          <option ng-model="grupo1b" ng-value="2">2</option>
+          <option ng-model="grupo1b" ng-value="3">3</option>
+          <option ng-model="grupo1b" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">o que me parece melhor</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... intuição.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo1c" ng-value="1">1</option>
+          <option ng-model="grupo1c" ng-value="2">2</option>
+          <option ng-model="grupo1c" ng-value="3">3</option>
+          <option ng-model="grupo1c" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">um estudo preciso e minucioso do assunto.</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... o que me parece melhor.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo1d" ng-value="1">1</option>
+          <option ng-model="grupo1d" ng-value="2">2</option>
+          <option ng-model="grupo1d" ng-value="3">3</option>
+          <option ng-model="grupo1d" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">Grupo de perguntas 2</h3>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#000000;font-weight:600;text-align:center;">Durante uma decisão eu sou mais influenciado por:</h3>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">tom de voz de outra pessoa</p>
+
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">2.	Durante uma discussão eu sou mais influenciado por: </h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... tom de voz da outra pessoa.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo2a" ng-value="1">1</option>
+          <option ng-model="grupo2a" ng-value="2">2</option>
+          <option ng-model="grupo2a" ng-value="3">3</option>
+          <option ng-model="grupo2a" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">se eu posso ou não ver o argumento de outra pessoa</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... a lógica do argumento da outra pessoa.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo2b" ng-value="1">1</option>
+          <option ng-model="grupo2b" ng-value="2">2</option>
+          <option ng-model="grupo2b" ng-value="3">3</option>
+          <option ng-model="grupo2b" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">a lógica do argumento de outra pessoa</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... se eu entro em contato ou não com os sentimentos reais do outro.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo2c" ng-value="1">1</option>
+          <option ng-model="grupo2c" ng-value="2">2</option>
+          <option ng-model="grupo2c" ng-value="3">3</option>
+          <option ng-model="grupo2c" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">se eu entro em contato ou não com os sentimentos reais do outro. </p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... se eu posso ou não ver o argumento da outra pessoa.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo2d" ng-value="1">1</option>
+          <option ng-model="grupo2d" ng-value="2">2</option>
+          <option ng-model="grupo2d" ng-value="3">3</option>
+          <option ng-model="grupo2d" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">Grupo de perguntas 3</h3>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#000000;font-weight:600;text-align:center;">Eu comunico mais facilmente o que se passa comigo:</h3>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">do modo como me visto e aparento</p>
+
+
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">3.	Eu comunico mais facilmente o que se passa comigo:</h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... pelo tom da minha voz.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo3a" ng-value="1">1</option>
+          <option ng-model="grupo3a" ng-value="2">2</option>
+          <option ng-model="grupo3a" ng-value="3">3</option>
+          <option ng-model="grupo3a" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">pelos sentimentos que compartilho</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... pelas palavras que escolho.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo3b" ng-value="1">1</option>
+          <option ng-model="grupo3b" ng-value="2">2</option>
+          <option ng-model="grupo3b" ng-value="3">3</option>
+          <option ng-model="grupo3b" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">pelas palavras que escolho</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... pelos sentimentos que compartilho.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo3c" ng-value="1">1</option>
+          <option ng-model="grupo3c" ng-value="2">2</option>
+          <option ng-model="grupo3c" ng-value="3">3</option>
+          <option ng-model="grupo3c" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">pelo tom da minha voz</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... do modo como me visto e aparento.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo3d" ng-value="1">1</option>
+          <option ng-model="grupo3d" ng-value="2">2</option>
+          <option ng-model="grupo3d" ng-value="3">3</option>
+          <option ng-model="grupo3d" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">Grupo de perguntas 4</h3>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#000000;font-weight:600;text-align:center;">É muito fácil pra mim:</h3>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">achar o volume e sintonia ideais em um sistema de som</p>
+
+
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">4.	É muito fácil para mim:</h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... achar o volume e a sintonia ideais num sistema de som.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo4a" ng-value="1">1</option>
+          <option ng-model="grupo4a" ng-value="2">2</option>
+          <option ng-model="grupo4a" ng-value="3">3</option>
+          <option ng-model="grupo4a" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">selecionar o ponto mais relevante relativo a um assunto interessante.</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... selecionar o ponto mais relevante relativo a um assunto interessante.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo4b" ng-value="1">1</option>
+          <option ng-model="grupo4b" ng-value="2">2</option>
+          <option ng-model="grupo4b" ng-value="3">3</option>
+          <option ng-model="grupo4b" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">escolher os móveis mais confortáveis</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... escolher os móveis mais confortáveis.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo4c" ng-value="1">1</option>
+          <option ng-model="grupo4c" ng-value="2">2</option>
+          <option ng-model="grupo4c" ng-value="3">3</option>
+          <option ng-model="grupo4c" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">escolher as combinações de cores mais ricas e atraentes </p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... escolher as combinações de cores mais ricas e atraentes.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="number" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo4d" ng-value="1">1</option>
+          <option ng-model="grupo4d" ng-value="2">2</option>
+          <option ng-model="grupo4d" ng-value="3">3</option>
+          <option ng-model="grupo4d" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">Grupo de perguntas 5</h3>
-    <div class="spacer" style="width: 300px; height: 34.9896px;"></div>
-    <h3 style="color:#000000;font-weight:600;text-align:center;">Eu me percebo assim:</h3>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">se eu estou muito em sintonia com os sons do ambiente </p>
+
+
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+    <h3 style="color:#68ACAC;font-weight:600;text-align:center;">5.	Eu me percebo assim:</h3>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... se estou muito em sintonia com os sons do ambiente.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo5a" ng-value="1">1</option>
+          <option ng-model="grupo5a" ng-value="2">2</option>
+          <option ng-model="grupo5a" ng-value="3">3</option>
+          <option ng-model="grupo5a" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">se eu sou muito capaz de raciocinar com os fatos e dados novos</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... se sou muito capaz de raciocinar com fatos e dados novos.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo5b" ng-value="1">1</option>
+          <option ng-model="grupo5b" ng-value="2">2</option>
+          <option ng-model="grupo5b" ng-value="3">3</option>
+          <option ng-model="grupo5b" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">eu sou muito sensível à maneira como a roupa veste meu corpo</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... eu sou muito sensível à maneira como a roupa veste o meu corpo.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo5c" ng-value="1">1</option>
+          <option ng-model="grupo5c" ng-value="2">2</option>
+          <option ng-model="grupo5c" ng-value="3">3</option>
+          <option ng-model="grupo5c" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
-    <div class="row">
-      <div class="col col-60">
-        <div style="text-align:center;" class="show-list-numbers-and-dots">
-          <p style="color:#000000;">eu respondo fortemente às cores e à aparência de uma sala.</p>
+
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          ... eu respondo fortemente às cores e à aparência de uma sala.
         </div>
-      </div>
-      <div class="col col-40">
-        <form class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="1 a 4">
-          </label>
-        </form>
-      </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo5d" ng-value="1">1</option>
+          <option ng-model="grupo5d" ng-value="2">2</option>
+          <option ng-model="grupo5d" ng-value="3">3</option>
+          <option ng-model="grupo5d" ng-value="4">4</option>
+        </select>
+      </label>
     </div>
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+
+
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Coachee
+      </div>
+      <select>
+        <option>-</option>
+        <option ng-model="grupo5d" ng-value="1">1</option>
+        <option ng-model="grupo5d" ng-value="2">2</option>
+        <option ng-model="grupo5d" ng-value="3">3</option>
+        <option ng-model="grupo5d" ng-value="4">4</option>
+      </select>
+    </label>
+
+
+    <label class="item item-input item-select">
+      <span class="input-label">Data</span>
+      <input type="date" placeholder="" ng-model="dados.dataRelRepres">
+    </label>
+
     <button class="button button-positive  button-block">Enviar!</button>
   </ion-content>
 </ion-view>
