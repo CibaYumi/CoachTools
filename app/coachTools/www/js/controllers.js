@@ -36,7 +36,7 @@ angular.module('app.controllers', [])
     }])
 
   .controller('criarContaCtrl', ['$scope', '$stateParams', '$state', '$http',
-    
+
     function ($scope, $stateParams, $state, $http) {
 
     $scope.saveUser = function (nomeCompleto, email, senha) {
@@ -46,15 +46,9 @@ angular.module('app.controllers', [])
         "senha": senha
       };
 
-<<<<<<< HEAD
-      $http({
-        method: 'POST',
-        url: 'http://172.16.16.171:3000/signup',
-        data: usuario
-      }).then(function successCallback(response) {
-        $scope.flagenergy = response.data;
-        document.getElementById("flagColor").style.background = response.data.flag;
-=======
+    }])
+
+
 .controller('loginCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
@@ -167,29 +161,7 @@ function ($scope, $stateParams, $http) {
       E : grupo5e
     }
   };
-
-  $http({
-      method: 'POST',
-      url: 'http://172.16.16.171:3000/loveTest',
-      data:obj
-    }).then(function successCallback(response) {
-      $scope.flagenergy = response.data;
-      document.getElementById("flagColor").style.background = response.data.flag;
->>>>>>> 7281b37966479e778cfac1d5fc5111ecf89569b4
-      }, function errorCallback(response) {
-      });
-      /*        var successCalback = function(dados) {
-                  if (dados.status) {
-                      alert("dados cadastrados");
-                      $scope.erros = [];
-                  } else {
-                      $scope.erros = dados.erros;
-                  }
-                  console.log(dados);
-      
-              }
-              Usuarios.addUsuario(usuario, successCalback); */
-    };
+  
   }])
 
   .controller('loginCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
