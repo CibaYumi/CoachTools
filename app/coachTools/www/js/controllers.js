@@ -47,6 +47,14 @@ angular.module('app.controllers', [])
         };
       }
 
+      $http({
+        method: 'POST',
+        url: 'http://localhost/signup',
+        data: usuario
+      }).then(function successCallback(response) {
+        $scope.flagenergy = response.data;
+        document.getElementById("flagColor").style.background = response.data.flag;
+      });
     }])
 
 
