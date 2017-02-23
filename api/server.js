@@ -76,6 +76,17 @@ app.get('/clientes', function (req, res) {
     });
 })  //end of endpoint /coachee
 
+//  ------------------         retorna perfil         ------------------
+app.get('/perfil', function (req, res) {
+  var ref = firebase.database().ref("perfil");
+  ref.once('value')
+    .then(function(snap) {
+      res.send(
+        snap.val()
+      );
+    });
+})  //end of endpoint /coachee
+
 
 //  ------------------         Get Form Teste Amor         ------------------
 app.get('/loveTest', function (req, res) {

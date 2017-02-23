@@ -79,10 +79,21 @@ angular.module('app.controllers', [])
 
   }])
 
-  .controller('meuPerfilCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+  .controller('meuPerfilCtrl', ['$scope', '$stateParams', '$http', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
   // You can include any angular dependencies as parameters for this function
   // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+  function ($scope, $stateParams, $http) {
+
+    $http({
+      method: 'GET',
+      url: 'http://172.16.16.105:3000/perfil'
+    }).then(function successCallback(response) {
+      console.log(response.data);
+      $scope.perfil = response.data;
+      // $state.go('menu.painelDeControle');
+    }, function errorCallback(response) {
+      // $state.go('menu.painelDeControle');
+    });
 
 
   }])
@@ -186,7 +197,7 @@ angular.module('app.controllers', [])
 
         $http({
           method: 'GET',
-          url: 'http://localhost:3000/clientes'
+          url: 'http://172.16.16.105:3000/clientes'
         }).then(function successCallback(response) {
           console.log(response.data);
           $scope.clientes = response.data;
