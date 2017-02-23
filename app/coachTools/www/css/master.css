@@ -7,13 +7,6 @@
   background-color: #52677F;
 }
 
-/*.label.item.item-radio.ng-empty.ng-valid{
-  background-color: #52677F;
-}
-
-.ng-valid{
-  background-color: green;
-}*/
 
 
 /*---------------------------------   CLASS LOGIN   -----------------------------------*/
@@ -41,6 +34,14 @@ label.item.item-input.top-input, label.item.item-input.bottom-input{
 .center-form label {
     background-color: rgba(255, 255, 255, 0.55);
     border-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+/*---------------------------------   CLASS MENU   -----------------------------------*/
+ion-item{
+  background-color: #070F30;
 }
 
 
