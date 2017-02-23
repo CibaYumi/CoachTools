@@ -325,7 +325,7 @@
     <div class="list">
       <label class="item item-input item-select">
         <div class="input-label">
-          ...  se sou muito capaz de raciocinar com fatos e dados novos.
+          ... se sou muito capaz de raciocinar com fatos e dados novos.
         </div>
         <select>
           <option>-</option>
@@ -357,7 +357,7 @@
     <div class="list">
       <label class="item item-input item-select">
         <div class="input-label">
-          ...  eu respondo fortemente às cores e à aparência de uma sala.
+          ... eu respondo fortemente às cores e à aparência de uma sala.
         </div>
         <select>
           <option>-</option>
@@ -368,6 +368,28 @@
         </select>
       </label>
     </div>
+
+    <div class="spacer" style="width: 300px; height: 30px;"></div>
+
+
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Coachee
+      </div>
+      <select>
+        <option>-</option>
+        <option ng-model="grupo5d" ng-value="1">1</option>
+        <option ng-model="grupo5d" ng-value="2">2</option>
+        <option ng-model="grupo5d" ng-value="3">3</option>
+        <option ng-model="grupo5d" ng-value="4">4</option>
+      </select>
+    </label>
+
+
+    <label class="item item-input item-select">
+      <span class="input-label">Data</span>
+      <input type="date" placeholder="" ng-model="dados.dataRelRepres">
+    </label>
 
     <button class="button button-positive  button-block">Enviar!</button>
   </ion-content>
