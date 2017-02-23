@@ -15,6 +15,38 @@
   background-color: green;
 }*/
 
+
+/*---------------------------------   CLASS LOGIN   -----------------------------------*/
+.logo{
+  text-align: center;
+}
+
+input{
+  text-align: center;
+}
+
+label.item.item-input.top-input, label.item.item-input.bottom-input{
+  text-align: center;
+  padding-right: 16px;
+}
+
+.card .item.item-input input, .list-inset .item.item-input input, .padding > .list .item.item-input input, .padding-horizontal > .list .item.item-input input {
+    padding-right: 0px;
+}
+
+.center-form label.top-input, .center-form label.bottom-input {
+    border-radius: 4px 4px 4px 4px;
+}
+
+.center-form label {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+/*---------------------------------   CLASS HOME   -----------------------------------*/
 .icons-home{
   width: auto;
   text-align: center;
@@ -22,4 +54,8 @@
 
 .btn-home{
   width: 20px;
+}
+
+#login .scroll{
+  transform:translate3d(0px, 280px, 0px) scale(1) !important;
 }
