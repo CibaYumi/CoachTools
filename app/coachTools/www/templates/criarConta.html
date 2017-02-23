@@ -1,5 +1,5 @@
 <ion-view title="Criar Conta" hide-nav-bar="true" id="page4">
-  <ion-content padding="true" class="manual-ios-statusbar-padding">
+  <ion-content ng-controller="criarContaCtrl" padding="true" class="manual-ios-statusbar-padding">
     <div id="criarConta-markdown4" ng-if="error" class="show-list-numbers-and-dots error-box">
       <p style="color:#000000;">{{error}}</p>
     </div>
@@ -12,19 +12,19 @@
       <ion-list id="criarConta-list2">
         <label class="item item-input" id="criarConta-input1">
           <span class="input-label">Nome Completo</span>
-          <input type="text" placeholder="">
+          <input ng-model="nomeCompleto" type="text" placeholder="">
         </label>
         <label class="item item-input" id="criarConta-input2">
           <span class="input-label">Email</span>
-          <input type="email" placeholder="">
+          <input ng-model="email" type="email" placeholder="">
         </label>
         <label class="item item-input" id="criarConta-input3">
           <span class="input-label">Senha</span>
-          <input type="password" placeholder="">
+          <input ng-model="senha" type="password" placeholder="">
         </label>
       </ion-list>
       <div class="spacer" style="width: 300px; height: 18px;"></div>
-      <a ui-sref="menu.cadastro" id="criarConta-button1" style="border-radius:10px 10px 10px 10px;" class="button button-positive  button-block">Cadastra aí vai!</a>
+      <a ui-sref="menu.cadastro" id="criarConta-button1" ng-click="saveUser(nomeCompleto, email, senha)" style="border-radius:10px 10px 10px 10px;" class="button button-positive  button-block">Cadastra aí vai!</a>
       <a ui-sref="login" id="criarConta-button9" style="font-weight:500;font-size:12px;" class="button button-positive button-small button-block button-clear">Voltar à página de login</a>
     </form>
   </ion-content>
