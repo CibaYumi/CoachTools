@@ -60,3 +60,13 @@ ion-item{
 #login .scroll{
   transform:translate3d(0px, 280px, 0px) scale(1) !important;
 }
+
+
+/*---------------------------------   CLASS TESTE AMOR   -----------------------------------*/
+ion-checkmark{
+  background-color: green;
+}
+
+label {
+  opacity: 0.3;
+}
