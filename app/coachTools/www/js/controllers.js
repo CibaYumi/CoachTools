@@ -5,15 +5,15 @@ angular.module('app.controllers', [])
     // TIP: Access Route Parameters for your page via $stateParams.parameterName
     function ($scope, $stateParams, $state) {
       $scope.goToLoveTest = function () {
-        $state.go('testeAmor');
+        $state.go('menu.testeAmor');
       }
 
       $scope.goToRepresTest = function () {
-        $state.go('testeRepres');
+        $state.go('menu.testeRepres');
       }
 
       $scope.goToTimeTest = function () {
-        $state.go('testeTempo');
+        $state.go('menu.testeTempo');
       }
 
     }])
