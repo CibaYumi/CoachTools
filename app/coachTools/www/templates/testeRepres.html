@@ -1,12 +1,12 @@
 <ion-view title="Representacional">
-  <ion-content padding="true" class="has-header">
+  <ion-content class="body-pages" padding="true" class="has-header">
     <div class="spacer" style="width: 300px; height: 46px;"></div>
     <div>
       <img src="https://s3.amazonaws.com/ionic-io-static/rVyKmtrvQHKvz0LpJflZ_repre.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <h3 style="color:#000000;text-align:center;">Vamos realizar o teste do seu sistema representacional?</h3>
+    <h3 style="color:white;text-align:center;">Vamos realizar o teste do seu sistema representacional?</h3>
     <div style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#000000;">A partir de agora você terá sempre <strong>4 opções para descrever quem você é</strong>, e deverá seguir a lógica de:
+      <p style="color:white;">A partir de agora você terá sempre <strong>4 opções para descrever quem você é</strong>, e deverá seguir a lógica de:
         <strong>
           4 = essa é a opção que mais me descreve<br>
           3 = a próxima melhor descrição<br>
@@ -18,12 +18,12 @@
     <div class="spacer" style="width: 300px; height: 50px;"></div>
     <h2 style="color:#68ACAC;font-weight:600;text-align:center;">Vamos começar?</h2>
     <div style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#000000;">Nos grupos de perguntas abaixo
+      <p style="color:white;">Nos grupos de perguntas abaixo
         <strong>avalie cada frase com 1 a 4</strong> de acordo com o que mais descreve você, sem repetir o n´úmero.</p>
     </div>
     <div class="spacer" style="width: 300px; height: 40px;"></div>
     <div style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#000000;">O número 4 representa o que mais te representa em cada grupo e o número 1 o que você menos apreciaria [
+      <p style="color:white;">O número 4 representa o que mais te representa em cada grupo e o número 1 o que você menos apreciaria [
         <strong>nenhum grupo individual pode ter o mesmo número repetidas vezes</strong>]"</p>
     </div>
 
@@ -371,25 +371,27 @@
 
     <div class="spacer" style="width: 300px; height: 30px;"></div>
 
+    <form class="" method="post">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Coachee
+        </div>
+        <select>
+          <option>-</option>
+          <option ng-model="grupo5d" ng-value="1">1</option>
+          <option ng-model="grupo5d" ng-value="2">2</option>
+          <option ng-model="grupo5d" ng-value="3">3</option>
+          <option ng-model="grupo5d" ng-value="4">4</option>
+        </select>
+      </label>
 
-    <label class="item item-input item-select">
-      <div class="input-label">
-        Coachee
-      </div>
-      <select>
-        <option>-</option>
-        <option ng-model="grupo5d" ng-value="1">1</option>
-        <option ng-model="grupo5d" ng-value="2">2</option>
-        <option ng-model="grupo5d" ng-value="3">3</option>
-        <option ng-model="grupo5d" ng-value="4">4</option>
-      </select>
-    </label>
 
+      <label class="item item-input item-select">
+        <span class="input-label">Data</span>
+        <input type="date" placeholder="" ng-model="dados.dataRelRepres">
+      </label>
+    </form>
 
-    <label class="item item-input item-select">
-      <span class="input-label">Data</span>
-      <input type="date" placeholder="" ng-model="dados.dataRelRepres">
-    </label>
 
     <button class="button button-positive  button-block">Enviar!</button>
   </ion-content>
