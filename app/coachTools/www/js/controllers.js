@@ -39,96 +39,106 @@ angular.module('app.controllers', [])
 
     function ($scope, $stateParams, $state, $http) {
 
-    $scope.saveUser = function (nomeCompleto, email, senha) {
-      var usuario = {
-        "nome": nomeCompleto,
-        "email": email,
-        "senha": senha
-      };
-    }
+      $scope.saveUser = function (nomeCompleto, email, senha) {
+        var usuario = {
+          "nome": nomeCompleto,
+          "email": email,
+          "senha": senha
+        };
+      }
 
-  }])
+      $http({
+        method: 'POST',
+        url: 'http://localhost/signup',
+        data: usuario
+      }).then(function successCallback(response) {
+        $scope.flagenergy = response.data;
+        document.getElementById("flagColor").style.background = response.data.flag;
+      });
+
+    }])
 
 
   .controller('loginCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
-  }])
+    }])
 
   .controller('esqueceuASenhaCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
-  }])
+    }])
 
   .controller('cadastroCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
-  }])
+    }])
 
   .controller('cadastroDeCoacheeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
-  }])
+    }])
+
 
   .controller('meuPerfilCtrl', ['$scope', '$stateParams', '$http', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
   // You can include any angular dependencies as parameters for this function
   // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams, $http) {
+    function ($scope, $stateParams, $http) {
 
-    $http({
-      method: 'GET',
-      url: 'http://172.16.16.105:3000/perfil'
-    }).then(function successCallback(response) {
-      console.log(response.data);
-      $scope.perfil = response.data;
-      // $state.go('menu.painelDeControle');
-    }, function errorCallback(response) {
-      // $state.go('menu.painelDeControle');
-    });
+      $http({
+        method: 'GET',
+        url: 'http://172.16.16.105:3000/perfil'
+      }).then(function successCallback(response) {
+        console.log(response.data);
+        $scope.perfil = response.data;
+        // $state.go('menu.painelDeControle');
+      }, function errorCallback(response) {
+        // $state.go('menu.painelDeControle');
+      })
 
-
-  }])
+    }])
 
   .controller('coacheesCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
-  }])
+    }])
 
   .controller('planejamentoDeSessEsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
-  }])
+    }])
 
   .controller('ferramentasCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
-  }])
+    }])
 
   .controller('relatRiosCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-  // You can include any angular dependencies as parameters for this function
-  // TIP: Access Route Parameters for your page via $stateParams.parameterName
-  function ($scope, $stateParams) {
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
-  }])
+    }])
+
 
   .controller('testeAmorCtrl', ['$state', '$scope', '$stateParams', '$http', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
       // You can include any angular dependencies as parameters for this function
@@ -187,40 +197,41 @@ angular.module('app.controllers', [])
 
         };
 
+      }])
+
+
+
+  .controller('testeRepresCtrl', ['$scope', '$stateParams', '$http',// The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams,$http) {
+
+      $http({
+        method: 'GET',
+        url: 'http://172.16.16.105:3000/clientes'
+      }).then(function successCallback(response) {
+        console.log(response.data);
+        $scope.clientes = response.data;
+        // $state.go('menu.painelDeControle');
+      }, function errorCallback(response) {
+        // $state.go('menu.painelDeControle');
+      });
 
     }])
 
-    .controller('testeRepresCtrl', ['$scope', '$stateParams', '$http',// The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-      // You can include any angular dependencies as parameters for this function
-      // TIP: Access Route Parameters for your page via $stateParams.parameterName
-      function ($scope, $stateParams,$http) {
 
-        $http({
-          method: 'GET',
-          url: 'http://172.16.16.105:3000/clientes'
-        }).then(function successCallback(response) {
-          console.log(response.data);
-          $scope.clientes = response.data;
-          // $state.go('menu.painelDeControle');
-        }, function errorCallback(response) {
-          // $state.go('menu.painelDeControle');
-        });
+  .controller('testeTempoCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
     }])
 
-    .controller('testeTempoCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-      // You can include any angular dependencies as parameters for this function
-      // TIP: Access Route Parameters for your page via $stateParams.parameterName
-      function ($scope, $stateParams) {
-
-
-    }])
-
-    .controller('pageCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-      // You can include any angular dependencies as parameters for this function
-      // TIP: Access Route Parameters for your page via $stateParams.parameterName
-      function ($scope, $stateParams) {
+  .controller('pageCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+    // You can include any angular dependencies as parameters for this function
+    // TIP: Access Route Parameters for your page via $stateParams.parameterName
+    function ($scope, $stateParams) {
 
 
     }])
