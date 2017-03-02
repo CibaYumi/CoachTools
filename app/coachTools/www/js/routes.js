@@ -10,7 +10,7 @@ angular.module('app.routes', [])
 
 
 
-      .state('menu.painelDeControle', {
+    .state('menu.painelDeControle', {
     url: '/page1',
     views: {
       'side-menu21': {
@@ -120,24 +120,37 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('testeAmor', {
-    url: 'page12',
-    templateUrl: 'templates/testeAmor.html',
-    controller: 'testeAmorCtrl'
+  .state('menu.testeAmor', {
+    url: '/page12',
+    views: {
+      'side-menu21': {
+      templateUrl: 'templates/testeAmor.html',
+      controller: 'testeAmorCtrl'
+      }
+    }
   })
 
 
-  .state('testeRepres', {
+
+  .state('menu.testeRepres', {
     url: '/page14',
-    templateUrl: 'templates/testeRepres.html',
-    controller: 'testeRepresCtrl'
+    views: {
+      'side-menu21': {
+      templateUrl: 'templates/testeRepres.html',
+      controller: 'testeRepresCtrl'
+      }
+    }
   })
 
 
-  .state('testeTempo', {
+  .state('menu.testeTempo', {
     url: '/page15',
-    templateUrl: 'templates/testeTempo.html',
-    controller: 'testeTempoCtrl'
+    views: {
+      'side-menu21':{
+      templateUrl: 'templates/testeTempo.html',
+      controller: 'testeTempoCtrl'
+      }
+    }
   })
 
   .state('page', {
