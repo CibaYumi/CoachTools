@@ -1,0 +1,21 @@
+angular.module('mySuperApp', ['ionic'])
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+
+// Triggered on a button click, or some other target
+$scope.showPopup = function() {
+  $scope.data = {};
+
+  // An elaborate, custom popup
+  var myPopup = $ionicPopup.show({
+    template: '<input type="password" ng-model="data.wifi">',
+    title: 'Aviso',
+    subTitle: 'Um email foi enviado para a sua caixa de entrada com as instruções de redefinição de senha',
+    scope: $scope,
+    buttons: [
+      { text: 'Confirmar' },
+    ]
+  });
+
+  myPopup.then(function(res) {
+    console.log('Tapped!', res);
+  });
